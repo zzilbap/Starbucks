@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Starbucks Website Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" ><img src="./Image/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor<br> incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam,
+                quis<br> nostrud exrcitaion ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="./Image/img1.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./Image/thumb1.png" onclick="imgSlider('./Image/img1.png')"></li>
+            <li><img src="./Image/thumb2.png" onclick="imgSlider('./Image/img2.png')"></li>
+            <li><img src="./Image/thumb3.png" onclick="imgSlider('./Image/img3.png')"></li>
+        </ul>
+        <ul class="sci"> 
+            <li><a href="#"><img src="./Image/facebook.png"></a></li>
+            <li><a href="#"><img src="./Image/twitter.png"></a></li>
+            <li><a href="#"><img src="./Image/instagram.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+    </script>
+</body>
+</html>
